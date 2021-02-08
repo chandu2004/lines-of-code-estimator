@@ -17,4 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 #### Public URL
 
-Publicly accessible url: https://health-explore-olive.vercel.app/
+Publicly accessible url: https://lines-of-code-estimator.vercel.app/

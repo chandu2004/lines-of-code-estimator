@@ -1,7 +1,10 @@
 const filters = require('../../comment_filters');
 
 export default async (req, res) => {
-  let lines = req.body.split('\r\n');
+  let lines = req.body.split('\n');
+  for(let i=0; i<lines.length;i++) {
+    lines[i] = lines[i].replace("\r","");
+  }
   // const fileType = lines[1].substring(lines[1].lastIndexOf('.') + 1).replace('"', '');
   const fileType = lines[lines.length-3].replace('"', '');
   lines.splice(0, 4);
